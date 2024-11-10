@@ -1,24 +1,521 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" mode="dark">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css">
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>100x brokerages | Home Page 2</title>
+    <link rel="icon" href="https://krust-investment.netlify.app/assets/img/favicon-icon.png">
+    <meta name="description" content="Open up a world of possibilities with 100x brokerage">
+    <meta name="keywords" content="Investments, brokerage, trade">
+
+    <!-- style added here ================ -->
+
+    <link rel="stylesheet" href="./css//style.css">
+
+    <!-- font added here (ital + Merriweather) ================ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <!-- font-awesome added here ================ -->
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <!-- jQuery added here ================ -->
+    <script src="https://krust-investment.netlify.app/assets/jQuery/jquery-3.7.1.min.js"></script>
 </head>
 
 <body>
+    <header>
+        <div class="main-header">
+            <div class="container header-inner">
+                <a href="#"
+                    class="logo-area">
+                    <img src="./images/logo.png" alt="Site Logo"
+                        class="site-logo">
+                </a>
+                <a id="btn-nav-toggle" class="btn-nav-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+                <div class="header-btns">
+                    <a class="btn btn-login" href="https://krust-investment.netlify.app/login.html">Log in</a>
+                    <a class="btn btn-started" href="https://krust-investment.netlify.app/user/user-account.html">Get
+                        Started</a>
+                </div>
+            </div>
+        </div>
+        <div class="navigation-area">
+            <div class="container navigation-area-inner">
+                    <dl class="nav-main">
+                        <dt><a class="active" href="./index.html">Home</a></dt>
+                        <dt><a href="./about-us.html">About Us</a></dt>
+                        <dt><a href="./account-plan.html">Account Plans</a></dt>
+                        <dt><a href="./faq.html">FAQs</a></dt>
+                        <dt class="dropdown">
+                            <a> <span>Legal Documentation</span>
+                              <i class='bx bxs-chevron-down'></i>
+                            </a>
 
-  
- </div>
+                            <!-- <dl class="dropdown-menu d-flex flex-column r-g-15">
+                                <dt class="dropdown-item"><a
+                                        href="https://krust-investment.netlify.app/leave-message.html">Leave
+                                        Message</a></dt>
+                                <dt class="dropdown-item"><a href="./account-plan.html">Account Plans</a></dt>
+                                <dt class="dropdown-item"><a href="./faq.html">FAQs</a></dt>
+                            </dl> -->
+                        </dt>
+                    </dl>
+       
+                <div class="contact-details">
+                    <p>Opening Hours Mon - Fri: 8AM to 6PM</p>
+                    <a href="https://api.whatsapp.com/send?phone=01707101100" target="_blank">
+                      <i class='bx bxl-whatsapp' ></i>
+                        <span>Whatsapp</span>
+                    </a>
+                    <a href="mailto:ahnafkhanhibban@outlook.com">
+                      <i class='bx bx-envelope' ></i>
+                        <span>Email</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="circle-shadow-area">
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section-3">
+            <div class="container">
+                <div class="hero-section-main-area">
+                    <div class="content-area">
+                        <h1 class="title">Open up a world of possibilities <br> with <span>100x Brokerage</span>
+                        </h1>
+                        <p class="subtitle">Take control of your financial future. Our platform offers a
+                            seamless
+                            investing experience, from beginner to pro.
+                            Explore a diverse range of investment options, gain valuable insights, and watch your
+                            portfolio grow. Join the brokerage
+                            community today.
+                        </p>
+                        <a href="" class="btn btn-started">Get Started</a>
+                    </div>
+                    <div class="floating-card-area">
+                      <div class="card">
+                        <img src="./images//netflix.png">
+                        <p class="text">NFLX</p>
+                        <p class="text-2">Netflix</p>
+                     </div>
+                     <div class="card card2">
+                      <img src="./images//bnb.png">
+                      <p class="text">BNB</p>
+                      <p class="text-2">BNB</p>
+                  </div>
+                        <div class="card card3">
+                            <img src="./images/google.png">
+                            <p class="text">GOOG</p>
+                            <p class="text-2">Alphabet</p>
+                        </div>
+                        <div class="card card4">
+                            <img src="./images/microsoft.png">
+                            <p class="text">MSFT</p>
+                            <p class="text-2">Microsoft Word</p>
+                        </div>
+                       
+                        <div class="card card5">
+                            <img src="./images//usa.png">
+                            <p class="text">SPX500</p>
+                            <p class="text-2">S&amp;P 500</p>
+                        </div>
+                        
+                        <div class="card">
+                            <img src="./images//gold.png">
+                            <p class="text">XAUUSD</p>
+                            <p class="text-2">Gold</p>
+                        </div>
+                        <!-- <div class="card">
+                            <img src="https://krust-investment.netlify.app/assets/img/hero-section-3-icon-apple.png">
+                            <p class="text">Apple</p>
+                            <p class="text-2">APPLE</p>
+                        </div>
+                        <div class="card">
+                            <img src="https://krust-investment.netlify.app/assets/img/hero-section-3-icon-btc.png">
+                            <p class="text">BTC</p>
+                            <p class="text-2">Bitcoin</p>
+                        </div>
+                        <div class="card">
+                            <img src="https://krust-investment.netlify.app/assets/img/hero-section-3-icon-exagus.png">
+                            <p class="text">XAGUSD</p>
+                            <p class="text-2">Silver</p>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+          
+            <div class="trade-counter">
+                    <div class="item">
+                        <span value="300">300+</span>
+                        <span class="text d-inline-block">CFDS to <br> Trade</span>
+                    </div>
+                    <div class="item">
+                        <span value="900" startWith="1:">1:900</span>
+                        <span class="text d-inline-block">Leverage Up <br> To</span>
+                    </div>
+                    <div class="item">
+                        <span value="1000" startWith="$">$1000</span>
+                        <span class="text d-inline-block">Minimum <br> deposit</span>
+                    </div>
+                    <div class="item">
+                        <span value="0" startWith="$">$0</span>
+                        <span class="text d-inline-block">Deposit <br> fees</span>
+                    </div>
+            </div>
+        </section>
+        <section class="trusted">
+          <button class="btn-regulated">Fully Regulated</button>
+          <div class="trusted-inner container">
+              <div class="trusted-imgBox">
+                <img alt="trusted" src="./images/trusted.png"/>
+              </div>
+              <div class="trusted-textBox">
+                <h2 class="trusted-title">Trusted For Over <span>25+ Years</span> </h2>
+                <p class="trusted-text">when placing your money with a broker, you need to make sure your broker is secure and can endure through good and bad times. Our strong capital position, conservative balance sheet and automated risk controls are designed to protect 100x Brokerage and our clients from trading losses.</p>
+                <div class="trusted-innerBox">
+                    <div class="trusted-item">
+                      <p class="trusted-sub">79.4%</p>
+                      <p class="trusted-par">Privately Held</p>
+                    </div>
+                    <div class="trusted-item">
+                      <p class="trusted-sub">$8.7B</p>
+                      <p class="trusted-par">Equity Capital </p>
+                    </div>
+                    <div class="trusted-item">
+                      <p class="trusted-sub">3.45M</p>
+                      <p class="trusted-par">Daily Average Revenue Trades</p>
+                    </div>
+                    <div class="trusted-item">
+                      <p class="trusted-sub">$5.8B</p>
+                      <p class="trusted-par">Excess Regulatory Capital</p>
+                    </div>
+                </div>
+              </div>
+          </div>
+          <di class="trusted-awards container">
+              <div class="award-item">
+                <img alt="award" src="./images/award.png"/>
+                <p class="award-sub">Best CFD Broker</p>
+                <p class="award-par">TradeON Summit 2023</p>
+              </div>
+              <div class="award-item">
+                <img alt="award" src="./images/award.png"/>
+                <p class="award-sub">Best Execution Broker</p>
+                <p class="award-par">Forex EXPO Dubai 2021</p>
+              </div>
+              <div class="award-item">
+                <img alt="award" src="./images/award.png"/>
+                <p class="award-sub">Best Trading Platform</p>
+                <p class="award-par">London Summit 2019</p>
+              </div>
+              <div class="award-item">
+                <img alt="award" src="./images/award.png"/>
+                <p class="award-sub">Best Broker Asia</p>
+                <p class="award-par">iFX EXPO 2015</p>
+              </div>
+          </div>
+        </section>
+        <section class="spreads">
+          <div class="spread-inner container">
+            <div class="spread-imgBox">
+                <img alt="spread" src="./images//spread.png"/>
+            </div>
+            <div class="spread-textBox">
+              <h2>Tight spreads and ultra-fast execution</h2>
+              <p class="spreads-text">Best market prices available so you can receive excellent conditions.</p>
+              <ul>
+                <li>
+                  <img alt="tick" src="./images//tick.png"/>
+                  <p>Low commissions starting as low as $10 with no added spreads, ticket charges, platform fees or account minumum</p>
+                </li>
+                <li>
+                  <img alt="tick" src="./images//tick.png"/>
+                  <p>Financing rates up to <span>50%</span>  lower than the industry</p>
+                </li>
+                <li>
+                  <img alt="tick" src="./images//tick.png"/>
+                  <p>Earn extra income on your lendable shares</p>
+                </li>
+                <li>
+                  <img alt="tick" src="./images//tick.png"/>
+                  <p>Negative balance protection</p>
+                </li>
+              </ul>
+              <button class="btn">Start Trading Today</button>
+            </div>
+          </div>
+        </section>
+        <section class="choose">
+          <div class="choose-inner container">
+              <div class="choose-left">
+                <h2>Why <span>Choose </span> Us</h2>
+                <p>Experience the difference. Discover a trading platform that empowers you to make informed decisions and achieve your financial goals.</p>
+                <button class="btn">Get Started</button>
+                <img alt="choose" src="./images/choose.png"/>
+              </div>
+              <div class="choose-right">
+                  <div class="choose-item">
+                    <div>
+                      <img alt="net" src="./images/net.png"/>
+                    </div>
+                    <p class="choose-sub">High Efficiency Platform</p>
+                    <p class="choose-par">We have a client first approach. We are committed to giving you one of the the best trading experiences at the tip of your fingers.</p>
+                  </div>
+                  <div class="choose-item">
+                    <div>
+                      <img alt="net" src="./images/net.png"/>
+                    </div>
+                    <p class="choose-sub">Trading Instruments</p>
+                    <p class="choose-par">Access a variety of trading instruments through one trading platforms. Ours.</p>
+                  </div>
+                  <div class="choose-item">
+                    <div>
+                      <img alt="net" src="./images/mingcute_safe-lock-fill.png"/>
+                    </div>
+                    <p class="choose-sub">Safe And Secure</p>
+                    <p class="choose-par">Client fund is kept in segregated accounts and separate from broker funds. We also have safety measures is place for all traders.</p>
+                  </div>
+                  <div class="choose-item">
+                    <div>
+                      <img alt="net" src="./images/net.png"/>
+                    </div>
+                    <p class="choose-sub">Dedicated Customer Support</p>
+                    <p class="choose-par">Receive expert assistance from our dedicated support team. Get timely solutions to your questions and concerns.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="features container">
+            <h2 class="features-title">Key Features</h2>
+            <p class="features-text">Experience the difference. Discover a trading platform that empowers you to make informed decisions and achieve your financial goals.</p>
+            <div class="feature-inner">
+              <div class="feature-item">
+                <img src="./images/Frame 1171278429.png" alt="feature"/>
+                <h4>Portfolio Management Tools</h4>
+                <p>Track, analyze, and optimize your investment portfolio. Make data-driven decisions to achieve your financial goals.</p>
+              </div>
+              <div class="feature-item">
+                <img src="./images/Frame 1171278429 (1).png" alt="feature"/>
+                <h4>Advanced Charting</h4>
+                <p>Identify trends, patterns, and potential trading opportunities and powerful charting tools for technical analysis.</p>
+              </div>
+              <div class="feature-item">
+                <img src="./images//Frame 1171278429 (2).png" alt="feature"/>
+                <h4>Real Time Market Data</h4>
+                <p>Real-time trade confirmations, margin details, transaction cost analysis, sophisticated portfolio analysis and more. </p>
+              </div>
+              <div class="feature-item">
+                <img src="./images/Frame 1171278429 (3).png" alt="feature"/>
+                <h4>Secure Trading Environment</h4>
+                <p>Protect your investments with our robust security measures, including encryption and two-factor authentication.</p>
+              </div>
+            </div>
+          </div>
+          <div class="trading container">
+            <h2>Simplified Trading with 100x Brokerage </h2>
+            <div class="trading-inner">
+              <div class="trading-item trading-item-active">
+                <div>1</div>
+                <h4>Create Your Account</h4>
+                <p>Sign up in minutes. Simply provide your basic information and verify your email and choose an account plan. Start your investment journey today.</p>
+                <button class="btn">Create Account</button>
+              </div>
+              <div class="trading-item">
+                <div>2</div>
+                <h4>Fund Your Wallet</h4>
+                <p>Deposit funds securely. Choose from a variety of convenient payment methods. Get ready to trade.</p>
+              </div>
+              <div class="trading-item">
+                <div>3</div>
+                <h4>Execute Trades</h4>
+                <p>Use our powerful search function to find stocks, cryptocurrencies, and more. Select your preferred order type and execute your trade.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- <section class="hero-section-2">
+            <div class="container">
+                <div class="d-flex flex-wrap">
+                    <div class="col d-flex flex-column justify-content-center">
+                        <h1 class="title">Open up a world of possibilities with <span class="text-primary">brokerage</span>
+                            Investments</h1>
+                        <p class="subtitle">Take control of your financial future. Our platform offers a seamless
+                            investing experience, from beginner to pro.
+                            Explore a diverse range of investment options, gain valuable insights, and watch your
+                            portfolio grow. Join the brokerage
+                            community today.
+                        </p>
+                        <a href="" class="btn w-max">Start Trading Today</a>
+                    </div>
+                    <div class="col d-flex">
+                        <img class="hero-image" src="https://krust-investment.netlify.app/assets/img/hero-section-2-mopbile-phone.png" alt="">
+                    </div>
+                </div>
+
+                <div class="trade-counter d-grid w-100">
+                    <div class="item">
+                        <span value="300">300+</span>
+                        <span class="text d-inline-block">CFDS to Trade</span>
+                    </div>
+                    <div class="item">
+                        <span value="500" startWith="1:">1:500</span>
+                        <span class="text d-inline-block">Leverage Up To</span>
+                    </div>
+                    <div class="item">
+                        <span value="100" startWith="$">$100</span>
+                        <span class="text d-inline-block">minimum deposit</span>
+                    </div>
+                    <div class="item">
+                        <span value="0" startWith="$">$0</span>
+                        <span class="text d-inline-block">Deposit fees</span>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- <section class="work-policy-2">
+            <div class="container">
+                <h1 class="title text-center">How it <span class="text-primary">works</span></h1>
+                <div class="policy-area d-flex flex-wrap">
+                    <div class="col card-group">
+                        <div class="card d-flex">
+                            <div class="card-header">
+                                <span class="card-sn">01</span>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-title">Register and Log In</div>
+                                <div class="card-subtitle">Start investing in by first creating your account and log in
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card d-flex">
+                            <div class="card-header">
+                                <span class="card-sn">02</span>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-title">Fund Your Account</div>
+                                <div class="card-subtitle">Become an active investor by funding your account with at
+                                    little as $50
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card d-flex">
+                            <div class="card-header">
+                                <span class="card-sn">03</span>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-title">Select Assets To Invest In</div>
+                                <div class="card-subtitle">Carefully choose the assets and commodities you would like to
+                                    trade
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col can-invest-area">
+                        <div class="card d-flex flex-column">
+                            <div class="card-badge w-max">Who?</div>
+                            <div class="card-title">Who Can Invest?</div>
+                            <div class="card-text">Individuals (above 18 years), business and cooperation can become
+                                investors by filling out the registration and funding
+                                their accounts.
+                                Explore our platforms vast trading tools and markets to get started.</div>
+                            <a href="" class="btn w-max">Start Trading Today</a>
+                            <div class="card-footer">
+                                <ul>
+                                    <li>Someone from Greece has withdrawn <span class="amount">&15,000</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="award-section">
+            <div class="container">
+                <div class="sliders d-flex flex-wrap justify-content-between align-items-center">
+                    <div class="item">
+                        <img src="https://krust-investment.netlify.app/assets/img/awards-2020-investopedia-overall.png"
+                            alt="">
+                    </div>
+                    <div class="item">
+                        <img src="https://krust-investment.netlify.app/assets/img/award-nw-2020-crop.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="https://krust-investment.netlify.app/assets/img/award-benzinga-best-trading-tech-2020.png"
+                            alt="">
+                    </div>
+                    <div class="item">
+                        <img src="https://krust-investment.netlify.app/assets/img/award-barrons-2021-best-online-broker-crop.png"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </section> -->
+    </main>
+<!-- 
+    <footer>
+        <div class="container">
+            <div class="d-flex flex-wrap justify-content-between align-items-start r-g-10">
+                <div class="logo-area d-flex align-items-center g-4">
+                    <img src="https://krust-investment.netlify.app/assets/img/site-logo-footer.png" alt="Site Logo"
+                        class="site-logo">
+
+                </div>
+                <div class="subscribe-area">
+                    <p class="text">Subscribe To Our Newsletter</p>
+                    <div class="input-area d-flex g-8">
+                        <div class="input-group">
+                            <input class="form-control" type="email" name="email" id="subscribeEmail"
+                                placeholder="Enter email here">
+                        </div>
+                        <a href="" class="btn">Subscribe</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-nav d-flex flex-wrap justify-content-between r-g-15">
+                <dl>
+                    <dt><a href="">Company</a></dt>
+                    <dt><a href="">Who We are</a></dt>
+                    <dt><a href="">Contact Us</a></dt>
+                    <dt><a href="">Legal Documentations</a></dt>
+                </dl>
+                <dl>
+                    <dt><a href="">Product</a></dt>
+                    <dt><a href="https://krust-investment.netlify.app/account-plan.html">Account Plans</a></dt>
+                </dl>
+                <dl>
+                    <dt class="text-end"><a href="https://krust-investment.netlify.app/user-dashboard.html">Get
+                            started</a></dt>
+                    <dt class="text-end"><a href="https://krust-investment.netlify.app/login.html">Log in</a></dt>
+                    <dt class="text-end"><a href="https://krust-investment.netlify.app/admin/admin-login.html">Admin
+                            Login</a></dt>
+                </dl>
+            </div>
+            <p class="footer-text text-center">&copy; 2024 100x Brokrage. All Rights Reserved.</p>
+        </div>
+    </footer> -->
 
 
-  <script src="js/main.js">
-  </script>
+
+    <!-- font-awesome added here ================ -->
+    <script src="https://krust-investment.netlify.app/assets/font-awesome-6.6.6-web/js/all.min.js"></script>
+
+    <!-- script added here ======================= -->
+    <script src="https://krust-investment.netlify.app/assets/js/script.js"></script>
 </body>
 
 </html>
