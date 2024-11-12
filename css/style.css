@@ -1,3 +1,6 @@
+body{
+  overflow-x: hidden;
+}
 section.hero-section {
   margin-block: 50px;
 }
