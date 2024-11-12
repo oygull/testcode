@@ -389,6 +389,9 @@ line-height: 40px;
 text-align: center;
 color: #FFFFFF;
 }
+.trading h2 span{
+  color: #3AA31A;
+}
 .trading-inner{
   display: flex;
   flex-direction: row;
