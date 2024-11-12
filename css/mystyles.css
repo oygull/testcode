@@ -70,37 +70,7 @@ margin-bottom: 50px;
   justify-content: space-between;
   padding: 0 20px;
 }
-@media only screen and (max-width: 767px){
-  .trusted-inner{
-    flex-direction: column !important;
-  }
-  .trusted-imgBox{
-    width: 100%;
-  }
-  .trusted-imgBox img{
-    width: 391px;
-    margin: 20px 0;
-  }
-  .trusted-textBox{
-    width: 100%;
-    padding: 0 20px;
-    margin-top: 50px;
-  }
-  .trusted-innerBox{
-    flex-wrap: wrap;
-    row-gap: 20px;
-  }
-  .trusted-item{
-    width: 50%;
-  }
-  .trusted-awards{
-    flex-wrap: wrap;
-    row-gap: 20px;
-  }
-  .award-item{
-    width: 50%;
-  }
-}
+
 .trusted-item{
   max-width: 132px;
   display: flex;
@@ -626,4 +596,92 @@ color: #FFFFFF;
 }
 .faq ul li span{
 color: #FFFFFF;
+}
+@media only screen and (max-width: 767px){
+  .trusted-inner{
+    flex-direction: column !important;
+  }
+  .trusted-imgBox{
+    width: 100%;
+  }
+  .trusted-imgBox img{
+    width: 391px;
+    margin: 20px 0;
+  }
+  .trusted-textBox{
+    width: 100%;
+    padding: 0 20px;
+    margin-top: 50px;
+  }
+  .trusted-innerBox{
+    flex-wrap: wrap;
+    row-gap: 20px;
+  }
+  .trusted-item{
+    width: 50%;
+  }
+  .trusted-awards{
+    flex-wrap: wrap;
+    row-gap: 20px;
+  }
+  .award-item{
+    width: 50%;
+  }
+  .spread-inner{
+    display: flex;
+    flex-direction: column;
+  }
+  .spread-imgBox{
+    width: 100%;
+    padding: 0 20px;
+  }
+  .spread-imgBox{
+    width: 100%;
+  }
+  .spread-textBox{
+    width: 100%;
+    margin-top: 50px;
+    padding: 0 20px;
+  }
+  .choose-inner{
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  .choose-left{
+    width: 100%;
+  }
+  .choose-left img{
+width: 100%;
+  }
+  .choose-right{
+    width: 100%;
+    padding: 0;
+    margin-top: 30px;
+  }
+  .choose-par{
+    font-size: 12px;
+  }
+  .choose-item{
+    width: 45%;
+  }
+  .feature-inner{
+    flex-wrap: wrap;
+    padding: 0 20px;
+  }
+  .feature-item{
+    width: 46%;
+    margin-bottom: 30px;
+  }
+  .feature-item p{
+    font-size: 12px;
+  }
+  .trading-inner{
+    flex-direction: column;
+    height: auto;
+    margin: 0 auto;
+  }
+  .trading-item{
+    width: 100%;
+    padding: 20px 0;
+  }
 }
