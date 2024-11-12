@@ -1,234 +1,296 @@
+
 <!DOCTYPE html>
 <html lang="en" mode="dark">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>100x brokerages | Home Page 2</title>
-    <link rel="icon" href="https://krust-investment.netlify.app/assets/img/favicon-icon.png">
-    <meta name="description" content="Open up a world of possibilities with 100x brokerage">
-    <meta name="keywords" content="Investments, brokerage, trade">
-
-    <!-- style added here ================ -->
-
-    <link rel="stylesheet" href="./css//style.css">
-
-    <!-- font added here (ital + Merriweather) ================ -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
-        rel="stylesheet">
+<title>100x Brokerage | Home Page </title>
+<link rel="icon" href="https://lokn.site/assets/img/favicon-icon.png">
+<meta name="description" content="Open up a world of possibilities with  100x brokerage">
+<meta name="keywords" content="Investments, 100x, brokerage, trade">
+<meta name="csrf-token" content="9u65laqskxZbWF7NjZfVe4s3opqWIzaVksm7KoSv">
 
 
-    <!-- font-awesome added here ================ -->
-   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+<!-- style added here ================ -->
+
+<link rel="stylesheet" href="./css/common.css">
+<link rel="stylesheet" href="./css/mystyles.css">
+<link rel="stylesheet" href="./css/general.css">
+<link rel="stylesheet" href="./css/style.css">
+
+<!-- font added here (ital + Merriweather) ================ -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
 
 
-    <!-- jQuery added here ================ -->
-    <script src="https://krust-investment.netlify.app/assets/jQuery/jquery-3.7.1.min.js"></script>
+<!-- font-awesome added here ================ -->
+<link rel="stylesheet" href="https://lokn.site/assets/font-awesome-6.6.6-web/css/all.min.css">
+
+
+
+
+<script>
+    var apiUrlCrypto = "https://lokn.site/crypto.json";
+    var apiUrlForex = "https://lokn.site/forex.json";
+    var apiUrlIndices = "https://lokn.site/indices.json";
+    var apiUrlStocks = "https://lokn.site/stocks.json";
+    var apiUrlFutures = "https://lokn.site/futures.json";
+    var apiUrletfs = "https://lokn.site/etfs.json";
+
+
+
+    const countries = [
+        "Luxembourg",
+        "Switzerland",
+        "Ireland",
+        "Norway",
+        "Qatar",
+        "Iceland",
+        "United States",
+        "Denmark",
+        "Singapore",
+        "Australia",
+        "Sweden",
+        "Netherlands",
+        "Austria",
+        "Finland",
+        "Germany",
+        "Canada",
+        "Belgium",
+        "United Arab Emirates",
+        "New Zealand",
+        "Japan"
+    ];
+</script>
+
+<!-- jQuery added here ================ -->
+<script src="https://lokn.site/assets/jQuery/jquery-3.7.1.min.js"></script>
 </head>
-
 <body>
-    <header>
-        <div class="main-header">
-            <div class="container header-inner">
-                <a href="#"
-                    class="logo-area">
-                    <img src="./images/logo.png" alt="Site Logo"
-                        class="site-logo">
+        <header>
+    <div class="marquee">
+        <ul class="marquee-content list-style-none" id="site-main-nav">
+            <li > 
+                <div class="price-card d-flex flex-column">
+                    <div class="d-flex justify-content-between align-items-center g-10">
+                        <div class="country-name d-flex align-items-center g-8">
+                            <img src="https://lokn.site/assets/img/country-eur.png" alt="country flag" class="flag">
+                            <span>eurusd</span>
+                        </div>
+                        <div class="price">481.3</div>
+                    </div>
+                    <div class="percentage-area d-flex align-items-center g-8">
+                        <i class="fa-solid fa-chevron-up"></i>
+                        <span class="percentage">3.68%</span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="main-header">
+        <div class="container d-flex flex-wrap justify-content-between align-items-center g-10">
+            <a href="" class="logo-area d-flex align-items-center g-4">
+                <img src="https://lokn.site/assets/img/site-logo-brokerage.png" alt="Site Logo" class="site-logo">
+            </a>
+            <a id="btn-nav-toggle" class="btn-nav-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+            <div class="header-btns d-flex flex-wrap g-8">
+                <a class="btn btn-login" href="">Log in</a>
+                <a class="btn btn-started" href="">Get Started</a>
+            </div>
+        </div>
+    </div>
+    <div class="navigation-area">
+        <div class="container d-flex flex-wrap justify-content-between align-items-center g-10">
+            <nav class="nav nav-main">
+                <dl class="d-flex flex-wrap g-20">
+                    <dt><a href="" class="active">Home</a></dt>
+                    <dt><a href="" class="">About Us</a></dt>
+                    <dt><a href="" class="">Account Plans</a></dt>
+                    <dt><a href=""  class="">FAQs</a></dt>
+                    <dt class="dropdown">
+                        <a> <span>Legal Documentation</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                                                <dl class="dropdown-menu d-flex flex-column r-g-15">
+                                                                                                <dt class="dropdown-item">
+                                        <a href="javascript:void(0)" 
+                                            >
+                                            Sec regulations
+                                        </a>
+                                    </dt>
+                                                                    <dt class="dropdown-item">
+                                        <a href="javascript:void(0)" 
+                                            >
+                                            Security Investors protections
+                                        </a>
+                                    </dt>
+                                                                    <dt class="dropdown-item">
+                                        <a href="javascript:void(0)" 
+                                            >
+                                            Corporation SIPC
+                                        </a>
+                                    </dt>
+                                                                                    </dl>
+                    </dt>
+                    <dt class="header-btns g-8">
+                        <a class="btn btn-login" href="">Log in</a>
+                        <a class="btn btn-started" href="">Get Started</a>
+                    </dt>
+                </dl>
+            </nav>
+            <div class="contact-details d-flex g-20">
+                <p>Opening Hours Mon - Fri: 8AM to 6PM</p>
+                <a target="_blank" href="tel:+1(111)111-1111">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <span>+1(111)111-1111</span>
                 </a>
-                <a id="btn-nav-toggle" class="btn-nav-toggle">
-                    <i class="fa-solid fa-bars"></i>
+                <a target="_blank" href="mailto:demo@demo.com">                    
+                    <i class="fa-regular fa-envelope"></i>
+                    <span>Email</span>
                 </a>
-                <div class="header-btns">
-                    <a class="btn btn-login" href="https://krust-investment.netlify.app/login.html">Log in</a>
-                    <a class="btn btn-started" href="https://krust-investment.netlify.app/user/user-account.html">Get
-                        Started</a>
+            </div>
+        </div>
+    </div>
+    <div class="circle-shadow-area">
+    </div>
+</header>        <main>
+    <section class="hero-section-3">
+        <div class="container">
+            <div
+                class="hero-section-main-area d-flex flex-wrap justify-content-center align-items-start text-center">
+                <div class="content-area">
+                    <h1 class="title">Open up a world of possibilities <br> with<img class="icon"
+                            src="https://lokn.site/assets/img/hero-section-3-logo.png">
+                    </h1>
+                    <p class="subtitle mx-auto">Take control of your financial future. Our platform offers a
+                        seamless
+                        investing experience, from beginner to pro.
+                        Explore a diverse range of investment options, gain valuable insights, and watch your
+                        portfolio grow. Join the brokerage
+                        community today.
+                    </p>
+                    <a href="" class="btn w-max mx-auto">Get Started</a>
                 </div>
             </div>
         </div>
-        <div class="navigation-area">
-            <div class="container navigation-area-inner">
-                    <dl class="nav-main">
-                        <dt><a class="active" href="./index.html">Home</a></dt>
-                        <dt><a href="./about-us.html">About Us</a></dt>
-                        <dt><a href="./account-plan.html">Account Plans</a></dt>
-                        <dt><a href="./faq.html">FAQs</a></dt>
-                        <dt class="dropdown">
-                            <a> <span>Legal Documentation</span>
-                              <i class='bx bxs-chevron-down'></i>
-                            </a>
-
-                            <!-- <dl class="dropdown-menu d-flex flex-column r-g-15">
-                                <dt class="dropdown-item"><a
-                                        href="https://krust-investment.netlify.app/leave-message.html">Leave
-                                        Message</a></dt>
-                                <dt class="dropdown-item"><a href="./account-plan.html">Account Plans</a></dt>
-                                <dt class="dropdown-item"><a href="./faq.html">FAQs</a></dt>
-                            </dl> -->
-                        </dt>
-                    </dl>
-       
-                <div class="contact-details">
-                    <p>Opening Hours Mon - Fri: 8AM to 6PM</p>
-                    <a href="https://api.whatsapp.com/send?phone=01707101100" target="_blank">
-                      <i class='bx bxl-whatsapp' ></i>
-                        <span>Whatsapp</span>
-                    </a>
-                    <a href="mailto:ahnafkhanhibban@outlook.com">
-                      <i class='bx bx-envelope' ></i>
-                        <span>Email</span>
-                    </a>
+        <div class="floating-card-area">
+            <div class="card">
+                <img src="https://lokn.site/assets/img/hero-section-3-icon-google.png">
+                <p class="text">GOOG</p>
+                <p class="text-2">Alphabet</p>
+            </div>
+            <div class="card">
+                <img src="https://lokn.site/assets/img/hero-section-3-icon-microsoft.png">
+                <p class="text">MSFT</p>
+                <p class="text-2">Microsoft Word</p>
+            </div>
+            <div class="card">
+                <img src="https://lokn.site/assets/img/bitcoin.png">
+                <p class="text">BITCOIN</p>
+                <p class="text-2">Bitcoin</p>
+            </div>
+            <div class="card">
+                <img src="https://lokn.site/assets/img/hero-section-3-icon-eur.png">
+                <p class="text">SPX500</p>
+                <p class="text-2">S&amp;P 500</p>
+            </div>
+            <div class="card">
+                <img src="https://lokn.site/assets/img/hero-section-3-icon-netflix.png">
+                <p class="text">NFLX</p>
+                <p class="text-2">Netflix</p>
+            </div>
+            <div class="card">
+                <img src="https://lokn.site/assets/img/hero-section-3-icon-gold.png">
+                <p class="text">XAUUSD</p>
+                <p class="text-2">Gold</p>
+            </div>
+        </div>
+        <div class="trade-counter w-100">
+            <div class="container d-grid">
+                <div class="item">
+                    <span  value="300">300+</span>
+                    <span class="text d-inline-block">CFDS to Trade</span>
+                </div>
+                <div class="item">
+                    <span value="500" startWith="1:">1:500</span>
+                    <span class="text d-inline-block">Leverage Up To</span>
+                </div>
+                <div class="item">
+                    <span value="1000" startWith="$">$1000</span>
+                    <span class="text d-inline-block">minimum deposit</span>
+                </div>
+                <div class="item">
+                    <span value="0" startWith="$">$0</span>
+                    <span class="text d-inline-block">Deposit fees</span>
                 </div>
             </div>
         </div>
-        <div class="circle-shadow-area">
+    </section>
+    <section class="trusted">
+        <button class="btn-regulated">Fully Regulated</button>
+        <div class="trusted-inner container">
+            <div class="trusted-imgBox">
+              <img alt="trusted" src="./images/trusted.png"/>
+            </div>
+            <div class="trusted-textBox">
+              <h2 class="trusted-title">Trusted For Over <span>25+ Years</span> </h2>
+              <p class="trusted-text">when placing your money with a broker, you need to make sure your broker is secure and can endure through good and bad times. Our strong capital position, conservative balance sheet and automated risk controls are designed to protect 100x Brokerage and our clients from trading losses.</p>
+         
+              <div class="trade-counter  trusted-innerBox">
+                
+                    <div class="item trusted-item">
+                        <span class="trusted-sub" startWith="%" value="79.4"> 79.4%</span>
+                        <span class="trusted-par" >Privately Held</span>
+                    </div>
+                    <div class="item trusted-item">
+                        <span class="trusted-sub" startWith="$" value="8.7" >$8.7B</span>
+                        <span class="trusted-par" >Equity Capital </span>
+                    </div>
+                    <div class="item trusted-item">
+                        <span class="trusted-sub" value="3.45" startWith="$">3.45M</span>
+                        <span class="trusted-par" >Daily Average Revenue Trades</span>
+                    </div>
+                    <div class="item trusted-item">
+                        <span class="trusted-sub" value="5.8" startWith="$">$5.8B</span>
+                        <span class="trusted-par" >Excess Regulatory Capital</span>
+                    </div>
+             
+            </div>
+            </div>
         </div>
-    </header>
-
-    <main>
-        <section class="hero-section-3">
-            <div class="container">
-                <div class="hero-section-main-area">
-                    <div class="content-area">
-                        <h1 class="title">Open up a world of possibilities <br> with <span>100x Brokerage</span>
-                        </h1>
-                        <p class="subtitle">Take control of your financial future. Our platform offers a
-                            seamless
-                            investing experience, from beginner to pro.
-                            Explore a diverse range of investment options, gain valuable insights, and watch your
-                            portfolio grow. Join the brokerage
-                            community today.
-                        </p>
-                        <a href="" class="btn btn-started">Get Started</a>
-                    </div>
-                    <div class="floating-card-area">
-                      <div class="card">
-                        <img src="./images//netflix.png">
-                        <p class="text">NFLX</p>
-                        <p class="text-2">Netflix</p>
-                     </div>
-                     <div class="card card2">
-                      <img src="./images//bnb.png">
-                      <p class="text">BNB</p>
-                      <p class="text-2">BNB</p>
-                  </div>
-                        <div class="card card3">
-                            <img src="./images/google.png">
-                            <p class="text">GOOG</p>
-                            <p class="text-2">Alphabet</p>
-                        </div>
-                        <div class="card card4">
-                            <img src="./images/microsoft.png">
-                            <p class="text">MSFT</p>
-                            <p class="text-2">Microsoft Word</p>
-                        </div>
-                       
-                        <div class="card card5">
-                            <img src="./images//usa.png">
-                            <p class="text">SPX500</p>
-                            <p class="text-2">S&amp;P 500</p>
-                        </div>
-                        
-                        <div class="card">
-                            <img src="./images//gold.png">
-                            <p class="text">XAUUSD</p>
-                            <p class="text-2">Gold</p>
-                        </div>
-                        <!-- <div class="card">
-                            <img src="https://krust-investment.netlify.app/assets/img/hero-section-3-icon-apple.png">
-                            <p class="text">Apple</p>
-                            <p class="text-2">APPLE</p>
-                        </div>
-                        <div class="card">
-                            <img src="https://krust-investment.netlify.app/assets/img/hero-section-3-icon-btc.png">
-                            <p class="text">BTC</p>
-                            <p class="text-2">Bitcoin</p>
-                        </div>
-                        <div class="card">
-                            <img src="https://krust-investment.netlify.app/assets/img/hero-section-3-icon-exagus.png">
-                            <p class="text">XAGUSD</p>
-                            <p class="text-2">Silver</p>
-                        </div> -->
-                    </div>
-                </div>
+        <di class="trusted-awards container">
+            <div class="award-item">
+              <img alt="award" src="./images/award.png"/>
+              <p class="award-sub">Best CFD Broker</p>
+              <p class="award-par">TradeON Summit 2023</p>
             </div>
-          
-            <div class="trade-counter">
-                    <div class="item">
-                        <span value="300">300+</span>
-                        <span class="text d-inline-block">CFDS to <br> Trade</span>
-                    </div>
-                    <div class="item">
-                        <span value="900" startWith="1:">1:900</span>
-                        <span class="text d-inline-block">Leverage Up <br> To</span>
-                    </div>
-                    <div class="item">
-                        <span value="1000" startWith="$">$1000</span>
-                        <span class="text d-inline-block">Minimum <br> deposit</span>
-                    </div>
-                    <div class="item">
-                        <span value="0" startWith="$">$0</span>
-                        <span class="text d-inline-block">Deposit <br> fees</span>
-                    </div>
+            <div class="award-item">
+              <img alt="award" src="./images/award.png"/>
+              <p class="award-sub">Best Execution Broker</p>
+              <p class="award-par">Forex EXPO Dubai 2021</p>
             </div>
-        </section>
-        <section class="trusted">
-          <button class="btn-regulated">Fully Regulated</button>
-          <div class="trusted-inner container">
-              <div class="trusted-imgBox">
-                <img alt="trusted" src="./images/trusted.png"/>
-              </div>
-              <div class="trusted-textBox">
-                <h2 class="trusted-title">Trusted For Over <span>25+ Years</span> </h2>
-                <p class="trusted-text">when placing your money with a broker, you need to make sure your broker is secure and can endure through good and bad times. Our strong capital position, conservative balance sheet and automated risk controls are designed to protect 100x Brokerage and our clients from trading losses.</p>
-                <div class="trusted-innerBox">
-                    <div class="trusted-item">
-                      <p class="trusted-sub">79.4%</p>
-                      <p class="trusted-par">Privately Held</p>
-                    </div>
-                    <div class="trusted-item">
-                      <p class="trusted-sub">$8.7B</p>
-                      <p class="trusted-par">Equity Capital </p>
-                    </div>
-                    <div class="trusted-item">
-                      <p class="trusted-sub">3.45M</p>
-                      <p class="trusted-par">Daily Average Revenue Trades</p>
-                    </div>
-                    <div class="trusted-item">
-                      <p class="trusted-sub">$5.8B</p>
-                      <p class="trusted-par">Excess Regulatory Capital</p>
-                    </div>
-                </div>
-              </div>
-          </div>
-          <di class="trusted-awards container">
-              <div class="award-item">
-                <img alt="award" src="./images/award.png"/>
-                <p class="award-sub">Best CFD Broker</p>
-                <p class="award-par">TradeON Summit 2023</p>
-              </div>
-              <div class="award-item">
-                <img alt="award" src="./images/award.png"/>
-                <p class="award-sub">Best Execution Broker</p>
-                <p class="award-par">Forex EXPO Dubai 2021</p>
-              </div>
-              <div class="award-item">
-                <img alt="award" src="./images/award.png"/>
-                <p class="award-sub">Best Trading Platform</p>
-                <p class="award-par">London Summit 2019</p>
-              </div>
-              <div class="award-item">
-                <img alt="award" src="./images/award.png"/>
-                <p class="award-sub">Best Broker Asia</p>
-                <p class="award-par">iFX EXPO 2015</p>
-              </div>
-          </div>
-        </section>
-        <section class="spreads">
+            <div class="award-item">
+              <img alt="award" src="./images/award.png"/>
+              <p class="award-sub">Best Trading Platform</p>
+              <p class="award-par">London Summit 2019</p>
+            </div>
+            <div class="award-item">
+              <img alt="award" src="./images/award.png"/>
+              <p class="award-sub">Best Broker Asia</p>
+              <p class="award-par">iFX EXPO 2015</p>
+            </div>
+        </div>
+      </section>
+ <section class="spreads">
           <div class="spread-inner container">
             <div class="spread-imgBox">
                 <img alt="spread" src="./images//spread.png"/>
@@ -250,7 +312,10 @@
                   <p>Earn extra income on your lendable shares</p>
                 </li>
                 <li>
-                  <img alt="tick" src="./images//tick.png"/>
+                  <img alt="t
+
+oygul, [12 Nov 2024 at 16:56:17]:
+ick" src="./images//tick.png"/>
                   <p>Negative balance protection</p>
                 </li>
               </ul>
@@ -258,7 +323,7 @@
             </div>
           </div>
         </section>
-        <section class="choose">
+ <section class="choose">
           <div class="choose-inner container">
               <div class="choose-left">
                 <h2>Why <span>Choose </span> Us</h2>
@@ -322,7 +387,9 @@
                 <p>Protect your investments with our robust security measures, including encryption and two-factor authentication.</p>
               </div>
             </div>
-          </div>
+
+
+</div>
           <div class="trading container">
             <h2>Simplified Trading with 100x Brokerage </h2>
             <div class="trading-inner">
@@ -346,176 +413,280 @@
           </div>
         </section>
 
-        <!-- <section class="hero-section-2">
-            <div class="container">
-                <div class="d-flex flex-wrap">
-                    <div class="col d-flex flex-column justify-content-center">
-                        <h1 class="title">Open up a world of possibilities with <span class="text-primary">brokerage</span>
-                            Investments</h1>
-                        <p class="subtitle">Take control of your financial future. Our platform offers a seamless
-                            investing experience, from beginner to pro.
-                            Explore a diverse range of investment options, gain valuable insights, and watch your
-                            portfolio grow. Join the brokerage
-                            community today.
-                        </p>
-                        <a href="" class="btn w-max">Start Trading Today</a>
-                    </div>
-                    <div class="col d-flex">
-                        <img class="hero-image" src="https://krust-investment.netlify.app/assets/img/hero-section-2-mopbile-phone.png" alt="">
-                    </div>
+<section class="accaount">
+    <div class="container">
+        <h2>Choose The Best Account For You</h2>
+        <p>Tailor Your Trading Experience. Choose the account that best suits your investment goals and risk tolerance.</p>
+        <ul>
+            <li>
+               <button class="accaount-basic">Basic</button>
+               <h4>$250</h4>
+               <div class="tickLists">
+                <div class="tickItem">
+                    <img alt="tick" src="./images/tick.png"/>
+                    <p> Up to 25% margin loan</p>
                 </div>
+                <div class="tickItem">
+                    <img alt="tick" src="./images/tick.png"/>
+                    <p> Daily news</p>
+                </div>
+                <div class="tickItem">
+                    <img alt="tick" src="./images/tick.png"/>
+                    <p> Trading Academy</p>
+                </div>
+                <div class="tickItem">
+                    <img alt="tick" src="./images/tick.png"/>
+                    <p>Weekly market review</p>
+                </div>
+                <div class="tickItem">
+                    <img alt="tick" src="./images/tick.png"/>
+                    <p> Account manager</p>
+                </div>
+                <div class="tickItem">
+                    <img alt="tick" src="./images/tick.png"/>
+                    <p> Weekly portfolio progress report</p>
+                </div>
+               </div>
+               <button class="accaount-open">Open Account</button>
+            </li>
+            <li>
+                <button class="accaount-basic">Silver</button>
+                <h4>$1000</h4>
+                <div class="tickLists">
+                 <div class="tickItem">
+                     <img alt="tick" src="./images/tick.png"/>
+                     <p> Up to 25% margin loan</p>
+                 </div>
+                 <div class="tickItem">
+                     <img alt="tick" src="./images/tick.png"/>
+                     <p> Daily news</p>
+                 </div>
+                 <div class="tickItem">
+                     <img alt="tick" src="./images/tick.png"/>
+                     <p> Trading Academy</p>
+                 </div>
+                 <div class="tickItem">
+                     <img alt="tick" src="./images/tick.png"/>
+                     <p>Weekly market review</p>
+                 </div>
+                 <div class="tickItem">
+                     <img alt="tick" src="./images/tick.png"/>
+                     <p> Account manager</p>
+                 </div>
+                 <div class="tickItem">
+                     <img alt="tick" src="./images/tick.png"/>
+                     <p> Weekly portfolio progress report</p>
+                 </div>
+                </div>
+                <button class="accaount-open">Open Account</button>
+             </li>
+             <li>
+                <button class="accaount-basic">Gold</button>
+                <h4>$5000</h4>
+                <div class="tickLists">
+                 <div class="tickItem">
+                     <img alt="tick" src="./images/tick.png"/>
+                     <p> Up to 25% margin loan</p>
+                 </div>
+                 <div class="tickItem">
+                     <img alt="tick" src="./images/tick.png"/>
+                     <p> Daily news</p>
+                 </div>
+                 <div class="tickItem">
+                     <img alt="tick" src="./images/tick.png"/>
+                     <p> Trading Academy</p>
+                 </div>
+                 <div class="tickItem">
+                     <img alt="tick" src="./images/tick.png"/>
+                     <p>Weekly market review</p>
+                 </div>
+                 <div class="tickItem">
+                     <img alt="tick" src="./images/tick.png"/>
+                     <p> Account manager</p>
+                 </div>
+                 <div class="tickItem">
+                     <img alt="tick" src="./images/tick.png"/>
+                     <p> Weekly portfolio progress report</p>
+                 </div>
+                </div>
+                <button class="accaount-open">Open Account</button>
+             </li>
+             <li>
+                <button class="accaount-basic">VIP</button>
+                <h4>$100,000</h4>
+                <div class="tickLists">
+                 <div class="tickItem">
+                     <img alt="tick" src="./images/tick.png"/>
+                     <p> Up to 25% margin loan</p>
+                 </div>
+                 <div class="tickItem">
+                     <img alt="tick" src="./images/tick.png"/>
+                     <p> Daily news</p>
+                 </div>
+                 <div class="tickItem">
+                     <img alt="tick" src="./images/tick.png"/>
+                     <p> Trading Academy</p>
+                 </div>
+                 <div class="tickItem">
+                     <img alt="tick" src="./images/tick.png"/>
+                     <p>Weekly market review</p>
+                 </div>
+                 <div class="tickItem">
+                     <img alt="tick" src="./images/tick.png"/>
+                     <p> Account manager</p>
+                 </div>
+                 <div class="tickItem">
+                     <img alt="tick" src="./images/tick.png"/>
+                     <p> Weekly portfolio progress report</p>
+                 </div>
+                </div>
+                <button class="accaount-open">Open Account</button>
+             </li>
+             <li>
+                <button class="accaount-basic">Pro</button>
+                <h4>$500,000</h4>
+                <div class="tickLists">
+                 <div class="tickItem">
+                     <img alt="tick" src="./images/tick.png"/>
+                     <p> Up to 25% margin loan</p>
+                 </div>
+                 <div class="tickItem">
+                     <img alt="tick" src="./images/tick.png"/>
+                     <p> Daily news</p>
+                 </div>
+                 <div class="tickItem">
+                     <img alt="tick" src="./images/tick.png"/>
+                     <p> Trading Academy</p>
+                 </div>
+                 <div class="tickItem">
+                     <img alt="tick" src="./images/tick.png"/>
+                     <p>Weekly market review</p>
+                 </div>
+                 <div class="tickItem">
+                     <img alt="tick" src="./images/tick.png"/>
+                     <p> Account manager</p>
+                 </div>
+                 <div class="tickItem">
+                     <img alt="tick" src="./images/tick.png"/>
+                     <p> Weekly portfolio progress report</p>
+                 </div>
+                </div>
+                <button class="accaount-open">Open Account</button>
+             </li>
+             <li>
+                <button class="accaount-basic">Pro VIP</button>
+                <h4>$1,000,000</h4>
+                <div class="tickLists">
+                 <div class="tickItem">
+                     <img alt="tick" src="./images/tick.png"/>
+                     <p> Up to 25% margin loan</p>
+                 </div>
+                 <div class="tickItem">
+                     <img alt="tick" src="./images/tick.png"/>
+                     <p> Daily news</p>
+                 </div>
+                 <div class="tickItem">
+                     <img alt="tick" src="./images/tick.png"/>
+                     <p> Trading Academy</p>
+                 </div>
+                 <div class="tickItem">
+                     <img alt="tick" src="./images/tick.png"/>
+                     <p>Weekly market review</p>
+                 </div>
+                 <div class="tickItem">
+                     <img alt="tick" src="./images/tick.png"/>
+                     <p> Account manager</p>
+                 </div>
+                 <div class="tickItem">
+                     <img alt="tick" src="./images/tick.png"/>
+                     <p> Weekly portfolio progress report</p>
+                 </div>
+                </div>
+                <button class="accaount-open">Open Account</button>
+             </li>
+        </ul>
+    </div>
+   
+</section>
+<section class="faq">
+    <div class="container">
+      <h2>Frequently Asked Questions</h2>
+      <ul>
+        <li>
+            <p>How does 100x  Brokerage  work?</p>
+            <span>+</span>
+        </li>
+        <li>
+            <p>What if I am a beginner in trading?</p>
+            <span>+</span>
+        </li>
+        <li>
+            <p>What is the minimum deposit amount?</p>
+            <span>+</span>
+        </li>
+        <li>
+            <p>Can I start trading with just Any amount?</p>
+            <span>+</span>
+        </li>
+        <li>
+            <p>What trading tools are available on 100x Brokerage ?</p>
+            <span>+</span>
+        </li>
+        <li>
+            <p>What account plans does 100x Brokerage offer?</p>
+            <span>+</span>
+        </li>
+      </ul>
+    </div>
+</section>
 
-                <div class="trade-counter d-grid w-100">
-                    <div class="item">
-                        <span value="300">300+</span>
-                        <span class="text d-inline-block">CFDS to Trade</span>
-                    </div>
-                    <div class="item">
-                        <span value="500" startWith="1:">1:500</span>
-                        <span class="text d-inline-block">Leverage Up To</span>
-                    </div>
-                    <div class="item">
-                        <span value="100" startWith="$">$100</span>
-                        <span class="text d-inline-block">minimum deposit</span>
-                    </div>
-                    <div class="item">
-                        <span value="0" startWith="$">$0</span>
-                        <span class="text d-inline-block">Deposit fees</span>
-                    </div>
-                </div>
-            </div>
-        </section> -->
+</main>
 
-        <!-- <section class="work-policy-2">
-            <div class="container">
-                <h1 class="title text-center">How it <span class="text-primary">works</span></h1>
-                <div class="policy-area d-flex flex-wrap">
-                    <div class="col card-group">
-                        <div class="card d-flex">
-                            <div class="card-header">
-                                <span class="card-sn">01</span>
-                            </div>
-                            <div class="card-body">
-                                <div class="card-title">Register and Log In</div>
-                                <div class="card-subtitle">Start investing in by first creating your account and log in
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card d-flex">
-                            <div class="card-header">
-                                <span class="card-sn">02</span>
-                            </div>
-                            <div class="card-body">
-                                <div class="card-title">Fund Your Account</div>
-                                <div class="card-subtitle">Become an active investor by funding your account with at
-                                    little as $50
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card d-flex">
-                            <div class="card-header">
-                                <span class="card-sn">03</span>
-                            </div>
-                            <div class="card-body">
-                                <div class="card-title">Select Assets To Invest In</div>
-                                <div class="card-subtitle">Carefully choose the assets and commodities you would like to
-                                    trade
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col can-invest-area">
-                        <div class="card d-flex flex-column">
-                            <div class="card-badge w-max">Who?</div>
-                            <div class="card-title">Who Can Invest?</div>
-                            <div class="card-text">Individuals (above 18 years), business and cooperation can become
-                                investors by filling out the registration and funding
-                                their accounts.
-                                Explore our platforms vast trading tools and markets to get started.</div>
-                            <a href="" class="btn w-max">Start Trading Today</a>
-                            <div class="card-footer">
-                                <ul>
-                                    <li>Someone from Greece has withdrawn <span class="amount">&15,000</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <section class="award-section">
-            <div class="container">
-                <div class="sliders d-flex flex-wrap justify-content-between align-items-center">
-                    <div class="item">
-                        <img src="https://krust-investment.netlify.app/assets/img/awards-2020-investopedia-overall.png"
-                            alt="">
-                    </div>
-                    <div class="item">
-                        <img src="https://krust-investment.netlify.app/assets/img/award-nw-2020-crop.png" alt="">
-                    </div>
-                    <div class="item">
-                        <img src="https://krust-investment.netlify.app/assets/img/award-benzinga-best-trading-tech-2020.png"
-                            alt="">
-                    </div>
-                    <div class="item">
-                        <img src="https://krust-investment.netlify.app/assets/img/award-barrons-2021-best-online-broker-crop.png"
-                            alt="">
-                    </div>
-                </div>
-            </div>
-        </section> -->
-    </main>
-<!-- 
-    <footer>
-        <div class="container">
-            <div class="d-flex flex-wrap justify-content-between align-items-start r-g-10">
-                <div class="logo-area d-flex align-items-center g-4">
-                    <img src="https://krust-investment.netlify.app/assets/img/site-logo-footer.png" alt="Site Logo"
-                        class="site-logo">
 
-                </div>
-                <div class="subscribe-area">
-                    <p class="text">Subscribe To Our Newsletter</p>
-                    <div class="input-area d-flex g-8">
-                        <div class="input-group">
-                            <input class="form-control" type="email" name="email" id="subscribeEmail"
-                                placeholder="Enter email here">
-                        </div>
-                        <a href="" class="btn">Subscribe</a>
+<footer>
+    <div class="container">
+        <div class="d-flex flex-wrap justify-content-between align-items-start r-g-10">
+            <div class="logo-area d-flex align-items-center g-4">
+                <img src="https://lokn.site/assets/img/site-logo-footer.png" alt="Site Logo" class="site-logo">
+            </div>
+            <div class="subscribe-area">
+                <p class="text">Subscribe To Our Newsletter</p>
+                <div class="input-area d-flex g-8">
+                    <div class="input-group">
+                        <input class="form-control" type="email" name="email" id="subscribeEmail"
+                            placeholder="Enter email here">
                     </div>
+                    <a href="" class="btn">Subscribe</a>
                 </div>
             </div>
-            <div class="footer-nav d-flex flex-wrap justify-content-between r-g-15">
-                <dl>
-                    <dt><a href="">Company</a></dt>
-                    <dt><a href="">Who We are</a></dt>
-                    <dt><a href="">Contact Us</a></dt>
-                    <dt><a href="">Legal Documentations</a></dt>
-                </dl>
-                <dl>
-                    <dt><a href="">Product</a></dt>
-                    <dt><a href="https://krust-investment.netlify.app/account-plan.html">Account Plans</a></dt>
-                </dl>
-                <dl>
-                    <dt class="text-end"><a href="https://krust-investment.netlify.app/user-dashboard.html">Get
-                            started</a></dt>
-                    <dt class="text-end"><a href="https://krust-investment.netlify.app/login.html">Log in</a></dt>
-                    <dt class="text-end"><a href="https://krust-investment.netlify.app/admin/admin-login.html">Admin
-                            Login</a></dt>
-                </dl>
-            </div>
-            <p class="footer-text text-center">&copy; 2024 100x Brokrage. All Rights Reserved.</p>
         </div>
-    </footer> -->
+        <div class="footer-nav d-flex flex-wrap justify-content-between r-g-15">
+            <dl>
+                <dt><a href="">Company</a></dt>
+                <dt><a href="">Who We are</a></dt>
+                <dt><a href="">Contact Us</a></dt>
+                <dt><a href="">Legal Documentations</a></dt>
+            </dl>
+            <dl>
+                <dt><a href="">Product</a></dt>
+                <dt><a href="">Account Plans</a></dt>            </dl>
+            <dl>
+                <dt class="text-end"><a href="">Get started</a></dt>
+                <dt class="text-end"><a href="">Log in</a></dt>
+                <dt class="text-end"><a href="">sign up</a></dt>
+            </dl>
+        </div>
+        <p class="footer-text text-center">&copy; 2024 100x brokerage. All Rights Reserved.</p>
+    </div>
+</footer>
+
+        <script src="https://lokn.site/assets/font-awesome-6.6.6-web/js/all.min.js"></script>
 
 
+<!-- script added here ======================= -->
 
-    <!-- font-awesome added here ================ -->
-    <script src="https://krust-investment.netlify.app/assets/font-awesome-6.6.6-web/js/all.min.js"></script>
-
-    <!-- script added here ======================= -->
-    <script src="https://krust-investment.netlify.app/assets/js/script.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/main.js"></script>
 </body>
-
 </html>
