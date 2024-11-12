@@ -121,7 +121,7 @@ $(document).ready(function () {
                 } else if (decimalPlaces === 1) {
                     increment = 0.1;         // One decimal place
                 } else if (decimalPlaces === 2) {
-                    increment = 0.010;       // Two decimal places
+                    increment = 0.05;       // Two decimal places
                 }
     
                 // Set custom speed factor for each counter
