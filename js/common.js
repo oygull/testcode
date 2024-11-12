@@ -99,7 +99,6 @@ $(document).ready(function () {
         if (!callback) return new Promise((r) => (callback = r));
     };
 
-
     if ($('.trade-counter').length > 0) {
         onVisible($('.trade-counter')[0], () => {
             const $items = $('.trade-counter .item');
@@ -113,9 +112,17 @@ $(document).ready(function () {
     
                 if ($thisValue <= 0) return; // Skip if value is 0 or less
     
-                // Determine if the target value has decimals
-                const hasDecimal = $thisValue % 1 !== 0;
-                const increment = hasDecimal ? 0.1 : 1; // Use 0.1 if decimal, 1 if whole number
+                // Determine increment based on decimal places
+                let increment;
+                const decimalPlaces = ($thisValue.toString().split('.')[1] || '').length;
+    
+                if (decimalPlaces === 0) {
+                    increment = 1;           // Whole number
+                } else if (decimalPlaces === 1) {
+                    increment = 0.1;         // One decimal place
+                } else if (decimalPlaces === 2) {
+                    increment = 0.010;       // Two decimal places
+                }
     
                 // Set custom speed factor for each counter
                 let speedFactor;
@@ -135,13 +142,13 @@ $(document).ready(function () {
                 let count = 0.0;
                 const interval = setInterval(() => {
                     if (count < $thisValue) {
-                        // Display the count, formatting to 1 decimal if increment is 0.1
-                        $this.text($startWith + (hasDecimal ? count.toFixed(1) : Math.round(count)) + $endWith);
+                        // Display the count, formatting based on the decimal places
+                        $this.text($startWith + count.toFixed(decimalPlaces) + $endWith);
                         count += increment;
                     } else {
                         clearInterval(interval);
-                        // Display final value with appropriate formatting
-                        $this.text($startWith + (hasDecimal ? $thisValue.toFixed(1) : Math.round($thisValue)) + $endWith);
+                        // Display final value with the appropriate decimal formatting
+                        $this.text($startWith + $thisValue.toFixed(decimalPlaces) + $endWith);
                     }
                 }, intervalTime);
             });
