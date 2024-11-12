@@ -100,48 +100,54 @@ $(document).ready(function () {
     };
 
 
-
     if ($('.trade-counter').length > 0) {
         onVisible($('.trade-counter')[0], () => {
             const $items = $('.trade-counter .item');
             const duration = 1500; // Default duration
-
+    
             $items.each(function(index) {
                 const $this = $(this).find('span[value]');
-                const $thisValue = +$this.attr('value');
+                const $thisValue = parseFloat($this.attr('value'));
                 const $startWith = $this.attr('startWith') || '';
-
+                const $endWith = $this.attr('endWith') || '';
+    
                 if ($thisValue <= 0) return; // Skip if value is 0 or less
-
+    
+                // Determine if the target value has decimals
+                const hasDecimal = $thisValue % 1 !== 0;
+                const increment = hasDecimal ? 0.1 : 1; // Use 0.1 if decimal, 1 if whole number
+    
                 // Set custom speed factor for each counter
                 let speedFactor;
                 if (index === 0) {
-                    speedFactor = 1.8;  // Very slow for the first counter (300+)
+                    speedFactor = 1.8;  // Slow speed for the first counter
                 } else if (index === 1) {
-                    speedFactor = 1.8;  // Medium speed for the second counter (1:500)
+                    speedFactor = 1.8;  // Medium speed for the second counter
                 } else if (index === 2) {
-                    speedFactor = 1.8;  // Fast speed for the third counter ($1000 minimum deposit)
+                    speedFactor = 1.8;  // Fast speed for the third counter
                 } else {
                     speedFactor = 1.0;  // Default speed for other counters
                 }
-
+    
                 const adjustedDuration = duration / speedFactor;
-                const intervalTime = adjustedDuration / $thisValue;
-
-                let count = 0;
+                const intervalTime = adjustedDuration / ($thisValue / increment);
+    
+                let count = 0.0;
                 const interval = setInterval(() => {
-                    if (count <= $thisValue) {
-                        $this.text($startWith + Math.round(count));
-                        count += speedFactor * 0.2;
+                    if (count < $thisValue) {
+                        // Display the count, formatting to 1 decimal if increment is 0.1
+                        $this.text($startWith + (hasDecimal ? count.toFixed(1) : Math.round(count)) + $endWith);
+                        count += increment;
                     } else {
                         clearInterval(interval);
-                        $this.text($startWith + $thisValue);
+                        // Display final value with appropriate formatting
+                        $this.text($startWith + (hasDecimal ? $thisValue.toFixed(1) : Math.round($thisValue)) + $endWith);
                     }
                 }, intervalTime);
             });
         });
     }
-
+    
 
     if( $('.time-zone').length > 0 ) {
         const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
