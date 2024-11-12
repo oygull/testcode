@@ -116,7 +116,7 @@ $(document).ready(function () {
                 // Set custom speed factor for each counter
                 let speedFactor;
                 if (index === 0) {
-                    speedFactor = 0.8;  // Very slow for the first counter (300+)
+                    speedFactor = 1.8;  // Very slow for the first counter (300+)
                 } else if (index === 1) {
                     speedFactor = 1.8;  // Medium speed for the second counter (1:500)
                 } else if (index === 2) {
