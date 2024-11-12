@@ -580,6 +580,9 @@ border: navajowhite;
     flex-direction: column !important;
   }
   .trusted-imgBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
   }
   .trusted-imgBox img{
