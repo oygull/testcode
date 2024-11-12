@@ -272,8 +272,8 @@ margin-bottom: 30px;
   width: 236px;
 }
 .choose-item div{
-width: 64px;
-height: 64px;
+width: 44px;
+height: 44px;
 background: #3AA31A;
 border-radius: 8px;
 display: flex;
@@ -295,7 +295,7 @@ margin-bottom: 4px;
 font-family: 'Inter';
 font-style: normal;
 font-weight: 400;
-font-size: 13px;
+font-size: 13\px;
 line-height: 18px;
 color: rgba(255, 255, 255, 0.9);
 }
