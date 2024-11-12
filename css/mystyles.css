@@ -605,7 +605,7 @@ color: #FFFFFF;
     width: 100%;
   }
   .trusted-imgBox img{
-    width: 391px;
+    width: 321px;
     margin: 20px 0;
   }
   .trusted-textBox{
@@ -662,7 +662,7 @@ width: 100%;
     font-size: 12px;
   }
   .choose-item{
-    width: 45%;
+    width: 42%;
   }
   .feature-inner{
     flex-wrap: wrap;
