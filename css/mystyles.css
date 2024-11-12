@@ -678,10 +678,26 @@ width: 100%;
   .trading-inner{
     flex-direction: column;
     height: auto;
+    width: 90%;
     margin: 0 auto;
   }
   .trading-item{
     width: 100%;
     padding: 20px 0;
+  }
+  .accaount ul{
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  .accaount li{
+    width: 100%;
+  }
+  .faq ul{
+    width: 100%;
+    padding: 0;
+  }
+  .faq li{
+    width: 100%;
   }
 }
