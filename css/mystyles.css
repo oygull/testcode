@@ -205,7 +205,7 @@ font-size: 14px;
 line-height: 17px;
 color: #F2F2F2;
 border: none;
-margin-top: 25px;
+margin: 25px 4px;
 }
 .choose{
   padding: 60px 0;
@@ -578,6 +578,17 @@ text-align: center;
 color: #FFFFFF;
 border: navajowhite;
 }
+.see-more{
+  width: 128px;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 10px;
+  height: 38px;
+  background-color: transparent;
+}
+.see-more span{
+  padding-left: 4px;
+}
 
 @media only screen and (max-width: 767px){
   .trusted-inner{
@@ -595,15 +606,20 @@ border: navajowhite;
   }
   .trusted-textBox{
     width: 100%;
-    padding: 0 20px;
     margin-top: 50px;
   }
   .trusted-innerBox{
     flex-wrap: wrap;
+    align-items: start;
+    justify-content: space-between;
     row-gap: 20px;
+    padding-right: 90px;
   }
   .trusted-item{
     width: 50%;
+  }
+  .spreads{
+    padding-top: 20px;
   }
   .trusted-awards{
     flex-wrap: wrap;
@@ -628,7 +644,7 @@ border: navajowhite;
   }
   .spread-imgBox{
     width: 100%;
-    padding: 0 20px;
+  
   }
   .spread-imgBox{
     width: 100%;
@@ -636,11 +652,11 @@ border: navajowhite;
   .spread-textBox{
     width: 100%;
     margin-top: 50px;
-    padding: 0 20px;
+
   }
   .choose-inner{
     flex-direction: column;
-    padding: 0 20px;
+  
   }
   .choose-left{
     width: 100%;
@@ -662,7 +678,6 @@ width: 100%;
   .features{
     display: flex;
     flex-direction: column;
-    padding: 0 20px;
   }
   .feature-textBox{
     width: 100%;
@@ -706,7 +721,7 @@ width: 100%;
   .accaount ul{
     display: flex;
     flex-direction: column;
-    padding: 0 20px;
+  
   }
   .accaount li{
     width: 100%;
@@ -772,7 +787,11 @@ display: flex;
 flex-direction: column;
 align-items: start;
 }
+footer .footer-nav{
+  margin-top: 30px;
+}
 footer .logo-area p{
+  font-size: 16px;
   margin-top: 8px;
 }
 footer .btn-subscribe{
@@ -812,7 +831,7 @@ color: rgba(0, 0, 0, 0.65);
 .footer-bottom-text div{
   margin-top: 20px;
   flex-grow: 1;
-  height: 1.5px;
+  height: 1px;
   background-color: rgba(255, 255, 255, 0.15);
 }
 .footer-nav{
@@ -821,7 +840,7 @@ color: rgba(0, 0, 0, 0.65);
 @media only screen and (max-width: 767px){
   .leverage-inner{
     flex-direction: column;
-    padding: 30px 20px 0 20px;
+    padding: 30px 0 0 0;
   }
   .leverage-textBox{
     width: 100%;
@@ -830,7 +849,5 @@ color: rgba(0, 0, 0, 0.65);
     width: 100%;
     margin-bottom: 30px;
   }
-  .leverage{
-    padding: 0 20px;
-  }
+ 
 }
