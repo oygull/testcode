@@ -594,13 +594,13 @@ animation-name: right-to-left-floating;
       transform: translateX(0%);
     }
     33% {
-      transform: translateX(-505px);
+      transform: translateX(-450px);
     }
     66%{
       transform: translateX(0%);
     }
     100% {
-      transform: translateX(-505px);
+      transform: translateX(-450px);
     }
   }
 }
