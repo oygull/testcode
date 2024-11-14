@@ -577,30 +577,30 @@ section.hero-section-3 .hero-section-main-area .content-area .btn {
     justify-content: space-around;
     gap: 12px;
     width: 100vw;
-    overflow: hidden;
+    overflow: auto;
     padding-inline: 10px;
   }
   section.hero-section-3 .floating-card-area {
    display: flex;
    flex-direction: row;
    column-gap: 12px;
-   animation-name: right-to-left-floating;
+animation-name: right-to-left-floating;
     animation-duration: 20s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
   }
   @keyframes right-to-left-floating {
     0%{
-      transform: translateX(-58%);
+      transform: translateX(0%);
     }
     33% {
-      transform: translateX(0%);
+      transform: translateX(-505px);
     }
     66%{
-      transform: translateX(-58%);
+      transform: translateX(0%);
     }
     100% {
-      transform: translateX(0%);
+      transform: translateX(-505px);
     }
   }
 }
