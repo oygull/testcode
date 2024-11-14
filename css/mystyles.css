@@ -73,7 +73,6 @@ margin-bottom: 50px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0 20px;
 }
 
 .trusted-item{
@@ -262,6 +261,7 @@ margin-bottom: 30px;
 }
 .choose-right{
  width: 55%;
+ height: 430px;
   background: rgba(11, 77, 199, 0.05);
   border: 1.5px solid rgba(11, 77, 199, 0.03);
   border-radius: 8px;
@@ -270,7 +270,7 @@ margin-bottom: 30px;
   flex-direction: row;
   flex-wrap: wrap;
   column-gap: 36px;
-  row-gap: 26px;
+  row-gap: 36px;
 }
 .choose-item{
   display: flex;
@@ -356,6 +356,7 @@ color: rgba(255, 255, 255, 0.75);
   height: 140px;
   object-fit: cover;
   margin-bottom: 12px;
+  border-radius: 10px;
 }
 .feature-item h4{
 font-family: 'Inter';
