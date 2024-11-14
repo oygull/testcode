@@ -540,7 +540,7 @@ section.hero-section-3 .hero-section-main-area .content-area .title {
 }
 @media only screen and (max-width: 767px) {
   section.hero-section-3 .hero-section-main-area .content-area .title {
-    font-size: 36px;
+    font-size: 32px;
     line-height: 1.2;
   }
 }
@@ -571,14 +571,37 @@ section.hero-section-3 .hero-section-main-area .content-area .btn {
   }
 }
 @media only screen and (max-width: 991px) {
-  section.hero-section-3 .floating-card-area {
+  .floating-card-wrap{
     margin-bottom: 67px;
     display: flex;
     justify-content: space-around;
     gap: 12px;
     width: 100vw;
-    overflow: auto;
+    overflow: hidden;
     padding-inline: 10px;
+  }
+  section.hero-section-3 .floating-card-area {
+   display: flex;
+   flex-direction: row;
+   column-gap: 12px;
+   animation-name: right-to-left-floating;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  @keyframes right-to-left-floating {
+    0%{
+      transform: translateX(-58%);
+    }
+    33% {
+      transform: translateX(0%);
+    }
+    66%{
+      transform: translateX(-58%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
   }
 }
 section.hero-section-3 .floating-card-area .card {
